@@ -1,0 +1,155 @@
+:root {
+    --primary-clr: #F8FAFD;
+    --secondary-clr: #ffffff;
+    --search-clr: #E9EEF6;
+    --icon-clr: #5F6368;
+    --pro-clr: #188038;
+    --social-clr: #1A73E8;
+    --update-clr: #E37400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Public Sans", serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primary-clr);
+    overflow: hidden;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-height: 64px;
+    padding: 8px;
+    padding-right: 18px;
+    /* background-color: #188038; */
+}
+
+header a {
+    position: relative;
+}
+
+header a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+header a:hover::before {
+    background-color: #EAEBEE;
+}
+
+.headerlogo {
+    min-width: 238px;
+    display: flex;
+    align-items: center;
+}
+
+.headerlogo>a:nth-child(2):hover::before {
+    background-color: transparent;
+}
+
+
+.headerlogo>a:nth-child(1) {
+    padding: 12px;
+    margin: 0 4px;
+    height: 48px;
+}
+
+.header-search {
+    width: 80%;
+    min-height: 95%;
+    padding: 0 0 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.search-bar {
+    min-width: 284px;
+    /* margin: 0 10px; */
+    padding: 0 12px;
+    min-height: 48px;
+    width: 70%;
+    background-color: var(--search-clr);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar>a {
+    border-radius: 50%;
+}
+
+.search-bar>a:hover{
+    background: #EAEBEE;
+}
+
+.search-input {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.search-bar>.search-input>a{
+    height: 24px;
+}
+
+
+.search-bar>.search-input>input {
+    width: 90%;
+    min-width: 144px;
+    border: none;
+    background-color: transparent;
+    font-size: 1.1rem;
+}
+
+.settings-nav {
+    display: flex;
+    align-items: center;
+    min-width: 200px;
+}
+
+.settings-nav>a {
+    display: inline-block;
+    height: 40px;
+    padding: 8px;
+}
+
+
+
+.settings-nav>a:nth-last-child(1) {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    height: 44px;
+    width: 44px;
+    align-items: center;
+    justify-content: center;
+}
+
+.settings-nav>a:nth-last-child(1)>span {
+    background-color: #BF360C;
+    text-align: center;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
