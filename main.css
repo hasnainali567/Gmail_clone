@@ -1,0 +1,6 @@
+.main{
+    background-color: aqua;
+    height: calc(100% - 64px);
+    width: 100%;
+    display: flex;
+}
