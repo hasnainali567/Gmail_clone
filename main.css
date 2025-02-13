@@ -1,6 +1,63 @@
 .main{
-    background-color: aqua;
     height: calc(100% - 64px);
     width: 100%;
     display: flex;
+    padding-bottom: 18px;
+}
+
+.left{
+    max-width: 256px;
+    min-width: 256px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.left>.compose{
+    height: 56px;
+    margin: 8px 0 16px;
+    padding-left: 8px;
+}
+
+.compose>.compose-btn{
+    width: 58%;
+    height: 100%;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    padding: 0 15px;
+    background-color: #C2E7FF;
+}
+
+.inbox-container{
+    width: 100%;
+    padding-right: 16px;
+}
+
+.inbox-boxes{
+    min-width: 240px;
+    height: 32px;
+    padding: 0 12px 0 26px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.active{
+    background-color: #D3E3FD;
+}
+
+.center{
+    flex-grow: 1;
+    min-width: 532px;
+    background-color: #ffff;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.right{
+    min-width: 56px;
+    max-width: 56px;
+    height: 100%;
 }
