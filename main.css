@@ -88,6 +88,52 @@
     overflow: hidden;
 }
 
+
+.center>.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 16px;
+    padding-top: 4px;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+
+.left-dropdown{
+    width: 72px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-left-img{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-right>span{
+    font-size: .75rem;
+    color: #5e5e5e;
+    padding: 0 8px;
+}
+
+
+
+
 .right{
     min-width: 56px;
     max-width: 56px;
