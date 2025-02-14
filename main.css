@@ -45,6 +45,7 @@
     border-bottom-right-radius: 20px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .inbox-icons{
@@ -73,6 +74,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 12px 20px 12px 26px;
+    cursor: pointer;
 }
 
 .label-container>h4{
@@ -158,6 +160,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .top-line{
@@ -166,4 +169,8 @@
     background-color: #ECEEEF;
     margin: 16px 18px 16px;
     padding: 0 0 0 16px;
+}
+
+.bottom-icon{
+    cursor: pointer;
 }
